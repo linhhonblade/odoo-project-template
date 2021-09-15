@@ -1,0 +1,5 @@
+#!/bin/sh 
+ROOT=$(dirname $0)/..
+PYTHON=$ROOT/env/bin/python
+ODOO=$HOME/odoo-src/odoo/14.0/odoo-bin
+$PYTHON $ODOO -c $ROOT/odoo.conf "$@"
